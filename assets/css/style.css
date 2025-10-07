@@ -1,3 +1,7 @@
+.header {
+    text-align: center;
+}
+
 /* 1. コンテナの設定 */
 .container {
     display: flex; /* Flexboxを有効にする */
