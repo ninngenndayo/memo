@@ -1,0 +1,31 @@
+/* 1. コンテナの設定 */
+.container {
+    display: flex; /* Flexboxを有効にする */
+    height: 100vh; /* ビューポートの高さ全体を使用 */
+    max-height: 100vh; /* 確実にスクロールさせない */
+    overflow: hidden; /* ★最も重要：コンテナ自体のスクロールを禁止 */
+}
+
+/* 2. サイドバーとメインコンテンツの基本的なスタイル */
+.sidebar, .main-content {
+    padding: 15px;
+    /* 各要素が残りのスペースをどう配分するかを定義 */
+}
+
+/* 3. 各要素の幅の設定 */
+.left-sidebar, .right-sidebar {
+    flex: 0 0 200px; /* 幅を200pxに固定し、伸縮しない */
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    flex-grow: 1; /* ★残りの全てのスペースを占有する */
+    background-color: #ffffff;
+}
+
+/* 4. 独立スクロールの実現 */
+.sidebar, .main-content {
+    /* overflow-y: auto; または overflow-y: scroll; を設定 */
+    /* ★最も重要：コンテンツが要素の高さを超えた場合にのみスクロールバーを表示 */
+    overflow-y: auto; 
+}
