@@ -1,6 +1,6 @@
-.h1 {
-    background-color: aquamarine;
-    text-align: center;
+.header {
+    margin: 10px auto;
+    background: orange;
 }
 
 /* 1. コンテナの設定 */
