@@ -31,7 +31,7 @@
 
 .main-content {
     flex-grow: 1; /* ★残りの全てのスペースを占有する */
-    background-color: #ffffff;
+    background-color: orange;
 }
 
 /* 4. 独立スクロールの実現 */
