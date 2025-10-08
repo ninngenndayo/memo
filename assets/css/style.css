@@ -1,6 +1,12 @@
 .header {
     margin: 10px auto;
     background: orange;
+    /* ヘッダー内のテキストや子要素を中央揃えにする */
+    text-align: center; /* テキスト中心 */
+    display: flex; /* フレックスで子要素を中央に配置 */
+    justify-content: center; /* 横方向中央 */
+    align-items: center; /* 縦方向中央 */
+    padding: 12px 20px;
 }
 
 /* 1. コンテナの設定 */
