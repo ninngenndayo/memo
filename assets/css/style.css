@@ -1,42 +1,64 @@
-.site-header {
-    margin: 10px auto;
-    background: rgb(56, 235, 65);
-    /* ヘッダー内のテキストや子要素を中央揃えにする */
-    text-align: center; /* テキスト中心 */
-    display: flex; /* フレックスで子要素を中央に配置 */
-    justify-content: center; /* 横方向中央 */
-    align-items: center; /* 縦方向中央 */
-    padding: 12px 20px;
+body {
+  background-color: #c0c0c0; /* Windows 95っぽい灰色 */
+  color: #000;
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* 1. コンテナの設定 */
-.container {
-    display: flex; /* Flexboxを有効にする */
-    height: 100vh; /* ビューポートの高さ全体を使用 */
-    max-height: 100vh; /* 確実にスクロールさせない */
-    overflow: hidden; /* ★最も重要：コンテナ自体のスクロールを禁止 */
+header {
+  background-color: #000080;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 2px solid #808080;
 }
 
-/* 2. サイドバーとメインコンテンツの基本的なスタイル */
-.sidebar, .main-content {
-    padding: 15px;
-    /* 各要素が残りのスペースをどう配分するかを定義 */
+nav a {
+  color: #ffff00;
+  text-decoration: none;
+  margin: 0 5px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #ff0000;
 }
 
-/* 3. 各要素の幅の設定 */
-.left-sidebar, .right-sidebar {
-    flex: 0 0 200px; /* 幅を200pxに固定し、伸縮しない */
-    background-color: #f0f0f0;
+#container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 5px;
+  margin: 5px;
 }
 
-.main-content {
-    flex-grow: 1; /* ★残りの全てのスペースを占有する */
-    background-color: orange;
+#sidebar-left, #sidebar-right {
+  background-color: #e0e0e0;
+  border: 2px groove #808080;
+  padding: 8px;
 }
 
-/* 4. 独立スクロールの実現 */
-.sidebar, .main-content {
-    /* overflow-y: auto; または overflow-y: scroll; を設定 */
-    /* ★最も重要：コンテンツが要素の高さを超えた場合にのみスクロールバーを表示 */
-    overflow-y: auto; 
+#content {
+  background-color: #ffffff;
+  border: 2px inset #808080;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #808080;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  font-size: small;
+  border-top: 2px solid #000;
+}
+
+a {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
 }
