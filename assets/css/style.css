@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-header {
+.header {
   background-color: #000080;
   color: white;
   padding: 8px;
@@ -24,20 +24,20 @@ nav a:hover {
   color: #ff0000;
 }
 
-#container {
+.container {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
   gap: 5px;
   margin: 5px;
 }
 
-#sidebar-left, #sidebar-right {
+.sidebar-left, .sidebar-right {
   background-color: #e0e0e0;
   border: 2px groove #808080;
   padding: 8px;
 }
 
-#content {
+.main-content {
   background-color: #ffffff;
   border: 2px inset #808080;
   padding: 10px;
