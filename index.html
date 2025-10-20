@@ -18,6 +18,53 @@
         <aside class="sidebar sidebar-left">
             <h2>左サイドバー</h2>
             <p>独立してスクロールされる左側のナビゲーションや情報。</p>
+            <div class="tree">
+                <!-- 第1層 -->
+                <div class="node">
+                    <button class="toggle">
+                        <span>Excel VBA 概要</span>
+                        <span class="chevron">▶</span>
+                    </button>
+                    <div class="children hidden">
+                        <!-- 第2層 -->
+                        <div class="node">
+                            <button class="toggle">
+                                <span>オブジェクトモデル</span>
+                                <span class="chevron">▶</span>
+                            </button>
+                            <div class="children hidden">
+                                <!-- 第3層 -->
+                                <div class="leaf">Application オブジェクト</div>
+                                <div class="leaf">Workbook オブジェクト</div>
+                                <div class="leaf">Worksheet オブジェクト</div>
+                                <div class="leaf">Range オブジェクト</div>
+                            </div>
+                        </div>
+                        <div class="node">
+                            <button class="toggle">
+                                <span>プロパティ・メソッド</span>
+                                <span class="chevron">▶</span>
+                            </button>
+                            <div class="children hidden">
+                            <div class="leaf">Range.Value</div>
+                            <div class="leaf">Range.Select()</div>
+                            <div class="leaf">Workbook.Close()</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="node">
+                    <button class="toggle">
+                        <span>PowerPoint VBA 概要</span>
+                        <span class="chevron">▶</span>
+                    </button>
+                    <div class="children hidden">
+                        <div class="leaf">Presentation オブジェクト</div>
+                        <div class="leaf">Slide オブジェクト</div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="./js/app.js"></script>
         </aside>
 
         <main class="main-content">
@@ -33,10 +80,8 @@
         </main>
     </div>
 
-
-    
     <footer>
-        <p>&copy; 2025 [あなたのサイト名]. All Rights Reserved.</p>
+        <p>&copy; 2025 memodoyo. All Rights Reserved.</p>
     </footer>
 
 </body>
