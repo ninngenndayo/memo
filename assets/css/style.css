@@ -32,12 +32,14 @@ nav a:hover {
 }
 
 .sidebar-left, .sidebar-right {
+    width: 200px;
     background-color: #e0e0e0;
     border: 2px groove #808080;
     padding: 8px;
 }
 
 .main-content {
+    flex: 1;
     background-color: #ffffff;
     border: 2px inset #808080;
     padding: 10px;
