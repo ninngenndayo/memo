@@ -1,139 +1,139 @@
 body {
-  background-color: #c0c0c0; /* Windows 95っぽい灰色 */
-  color: #000;
-  font-family: "Times New Roman", serif;
-  margin: 0;
-  padding: 0;
+    background-color: #c0c0c0; /* Windows 95っぽい灰色 */
+    color: #000;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-  background-color: #000080;
-  color: white;
-  padding: 8px;
-  text-align: center;
-  border-bottom: 2px solid #808080;
+    background-color: #000080;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 2px solid #808080;
 }
 
 nav a {
-  color: #ffff00;
-  text-decoration: none;
-  margin: 0 5px;
+    color: #ffff00;
+    text-decoration: none;
+    margin: 0 5px;
 }
 nav a:hover {
-  text-decoration: underline;
-  color: #ff0000;
+    text-decoration: underline;
+    color: #ff0000;
 }
 
 .container {
-  display: flex;
-  grid-template-columns: 200px 1fr 200px;
-  gap: 5px;
-  margin: 5px;
+    display: flex;
+
+    gap: 5px;
+    margin: 5px;
 }
 
 .sidebar-left, .sidebar-right {
-  background-color: #e0e0e0;
-  border: 2px groove #808080;
-  padding: 8px;
+    background-color: #e0e0e0;
+    border: 2px groove #808080;
+    padding: 8px;
 }
 
 .main-content {
-  background-color: #ffffff;
-  border: 2px inset #808080;
-  padding: 10px;
-  line-height: 1.5;
+    background-color: #ffffff;
+    border: 2px inset #808080;
+    padding: 10px;
+    line-height: 1.5;
 }
 
 footer {
-  background-color: #808080;
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  font-size: small;
-  border-top: 2px solid #000;
+    background-color: #808080;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    border-top: 2px solid #000;
 }
 
 a {
-  color: blue;
+    color: blue;
 }
 a:visited {
-  color: purple;
+    color: purple;
 }
 a:hover {
-  color: red;
+    color: red;
 }
 
 
 
 
 .tree {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  max-width: 480px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 480px;
+    margin: auto;
 }
 
 .node {
-  background: #fff;
-  border-radius: 6px;
-  padding: 0.4rem 0.8rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .toggle {
-  background: none;
-  border: none;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  text-align: left;
-  padding: 0.4rem 0;
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 0.4rem 0;
 }
 
 .toggle:hover {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .chevron {
-  transition: transform 0.3s;
-  font-weight: bold;
+    transition: transform 0.3s;
+    font-weight: bold;
 }
 
 .open .chevron {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .children {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-left: 1rem;
-  margin-top: 4px;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 1rem;
+    margin-top: 4px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s;
 }
 
 .children.hidden {
-  max-height: 0;
-  opacity: 0;
-  pointer-events: none;
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .children:not(.hidden) {
-  opacity: 1;
-  max-height: 1000px;
+    opacity: 1;
+    max-height: 1000px;
 }
 
 .leaf {
-  font-weight: 400;
-  color: #333;
-  padding: 0.3rem 0.5rem;
+    font-weight: 400;
+    color: #333;
+    padding: 0.3rem 0.5rem;
 }
 
 .leaf:hover {
-  background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
