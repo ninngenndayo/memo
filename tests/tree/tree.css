@@ -1,0 +1,71 @@
+.tree {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.node {
+    background: #fff;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.toggle {
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    padding: 0.4rem 0;
+}
+
+.toggle:hover {
+    background-color: #f0f0f0;
+}
+
+.chevron {
+    transition: transform 0.3s;
+    font-weight: bold;
+}
+
+.open .chevron {
+    transform: rotate(90deg);
+}
+
+.children {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 1rem;
+    margin-top: 4px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s;
+}
+
+.children.hidden {
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.children:not(.hidden) {
+    opacity: 1;
+    max-height: 1000px;
+}
+
+.leaf {
+    font-weight: 400;
+    color: #333;
+    padding: 0.3rem 0.5rem;
+}
+
+.leaf:hover {
+    background-color: #f8f8f8;
+}

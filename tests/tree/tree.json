@@ -1,0 +1,18 @@
+{
+"Excel VBA": {
+    "オブジェクトモデル": {
+    "Application": {},
+    "Workbook": {},
+    "Worksheet": {},
+    "Range": {}
+    },
+    "プロパティ・メソッド": {
+    "Range.Value": {},
+    "Workbook.Close": {}
+    }
+},
+"PowerPoint VBA": {
+    "Presentation": {},
+    "Slide": {}
+}
+}
