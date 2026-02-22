@@ -10,7 +10,7 @@ class MyCard extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         :host {
-          display: block;
+          
           box-sizing: border-box;
           font-family: system-ui, sans-serif;
         }
